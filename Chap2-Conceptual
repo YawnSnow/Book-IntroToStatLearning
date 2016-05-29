@@ -1,8 +1,5 @@
-1. For each of parts (a) through (d), indicate whether we would generally
-expect the performance of a flexible statistical learning method to be
-better or worse than an inflexible method. Justify your answer.
-(a) The sample size n is extremely large, and the number of predictors
-p is small.
+1. For each of parts (a) through (d), indicate whether we would generally expect the performance of a flexible statistical learning method to be better or worse than an inflexible method. Justify your answer.
+(a) The sample size n is extremely large, and the number of predictors p is small.
 
 Ans: Assuming non-linear relationship, a flexible statistical learning method will perform much better as n>>p making it less likely to overfit the data while reducing the bias by fitting more closely. For a dataset with a linear relationship between the outcome and predictor variables, the perfomance of an inflexible learning will still be better.
 
@@ -19,44 +16,30 @@ Ans: A flexible approach is suited better to models with higher level of complex
 Ans: On data with high variance of error terms, a more flexible approach will be prone to overfitting the training data leading to poor perfomance on the test data. Hence, an inflexible learning method is prefereable in such a situation.
 
 
-2. Explain whether each scenario is a classification or regression problem, and indicate whether we are most interested in inference or prediction.
-Finally, provide n and p.
-(a) We collect a set of data on the top 500 firms in the US. For each
-firm we record profit, number of employees, industry and the
-CEO salary. We are interested in understanding which factors
-affect CEO salary.
+2. Explain whether each scenario is a classification or regression problem, and indicate whether we are most interested in inference or prediction. Finally, provide n and p.
+(a) We collect a set of data on the top 500 firms in the US. For each firm we record profit, number of employees, industry and the
+CEO salary. We are interested in understanding which factors affect CEO salary.
 
 Ans: Regression, Inference, n = 500 and p = 3
 
-(b) We are considering launching a new product and wish to know
-whether it will be a success or a failure. We collect data on 20
-similar products that were previously launched. For each product
-we have recorded whether it was a success or failure, price
-charged for the product, marketing budget, competition price,
-and ten other variables.
+(b) We are considering launching a new product and wish to know whether it will be a success or a failure. We collect data on 20
+similar products that were previously launched. For each product we have recorded whether it was a success or failure, price
+charged for the product, marketing budget, competition price, and ten other variables.
 
 Ans: Classification, Prediction, n = 20 and p = 13
 
-(c) We are interesting in predicting the % change in the US dollar in
-relation to the weekly changes in the world stock markets. Hence
-we collect weekly data for all of 2012. For each week we record
-the % change in the dollar, the % change in the US market,
-the % change in the British market, and the % change in the
-German market.
+(c) We are interesting in predicting the % change in the US dollar in relation to the weekly changes in the world stock markets. Hence
+we collect weekly data for all of 2012. For each week we record the % change in the dollar, the % change in the US market,
+the % change in the British market, and the % change in the German market.
 
 Ans: Regression, Prediction, n=52 and p=3
 
 
 3. We now revisit the bias-variance decomposition.
-(a) Provide a sketch of typical (squared) bias, variance, training error,
-test error, and Bayes (or irreducible) error curves, on a single
-plot, as we go from less flexible statistical learning methods
-towards more flexible approaches. The x-axis should represent
-the amount of flexibility in the method, and the y-axis should
-represent the values for each curve. There should be five curves.
+(a) Provide a sketch of typical (squared) bias, variance, training error, test error, and Bayes (or irreducible) error curves, on a single plot, as we go from less flexible statistical learning methods towards more flexible approaches. The x-axis should represent
+the amount of flexibility in the method, and the y-axis should represent the values for each curve. There should be five curves.
 Make sure to label each one. 
-(b) Explain why each of the five curves has the shape displayed in
-part (a).
+(b) Explain why each of the five curves has the shape displayed in part (a).
 
 Ans: *The image will be inserted soon*
 1) Squared Bias - Squared bias is the error due to the difference between the average predicted value (which can be obtained by training model over different sets of data) and the right value of what we are trying to predict. As the flexibility of the model increases, we can fit more closely to the training data and as a result, the error due to bias decreases.
@@ -70,10 +53,7 @@ Ans: *The image will be inserted soon*
 5) Bayes or irreducible error - This error is irreducible due to factors present outside the dataset and is the lowest achievable error rate. Since, it is beyond the control of the model, it remains constant throughout.
 
 4. You will now think of some real-life applications for statistical learning.
-(a) Describe three real-life applications in which classification might
-be useful. Describe the response, as well as the predictors. Is the
-goal of each application inference or prediction? Explain your
-answer.
+(a) Describe three real-life applications in which classification might be useful. Describe the response, as well as the predictors. Is the goal of each application inference or prediction? Explain your answer.
 
 Ans:
 Identifying odors for prevention of hazardous situations
@@ -91,10 +71,7 @@ Response: Will this candidate score a GPA greater than 3.5 in grad school?
 Predictor: GRE scores, ranking of undergraduate college, undergraduate GPA, no. of publications
 Goal: Prediction
 
-(b) Describe three real-life applications in which regression might
-be useful. Describe the response, as well as the predictors. Is the
-goal of each application inference or prediction? Explain your
-answer.
+(b) Describe three real-life applications in which regression might be useful. Describe the response, as well as the predictors. Is the goal of each application inference or prediction? Explain your answer.
 
 Ans:
 Housing prices
@@ -116,10 +93,7 @@ Goal: Prediction
 might be useful.
 Clustering DNA sequences, Twitter: People to Follow recommendations, Music: tracks to play recommendations
 
-5. What are the advantages and disadvantages of a very flexible (versus
-a less flexible) approach for regression or classification? Under what
-circumstances might a more flexible approach be preferred to a less
-flexible approach? When might a less flexible approach be preferred?
+5. What are the advantages and disadvantages of a very flexible (versus a less flexible) approach for regression or classification? Under what circumstances might a more flexible approach be preferred to a less flexible approach? When might a less flexible approach be preferred?
 
 Ans:
 Advantages:
@@ -128,10 +102,7 @@ A flexible model does not make explicit assumptions about the form of the model 
 Disadvantages:
 At the same time, in cases where the goal is inference, an inflexible approach is more helpful in interpreting the model. A flexible approach requires a very large number of data set to get a reliable fitting function. On datasets with high variance, a more flexible model will overfit the data leading to poor perfomance on the training sets.
 
-6. Describe the differences between a parametric and a non-parametric
-statistical learning approach. What are the advantages of a parametric
-approach to regression or classification (as opposed to a nonparametric
-approach)? What are its disadvantages?
+6. Describe the differences between a parametric and a non-parametric statistical learning approach. What are the advantages of a parametric approach to regression or classification (as opposed to a nonparametric approach)? What are its disadvantages?
 
 Ans: A parametric approach starts with assuming a form of the model or function, f. A non-parametric approach does not make explicit assumptions about the functional form of f, rather it seeks an estimate of f that gets as close as possible to the data points without being too rough or wiggly.
 
@@ -168,7 +139,7 @@ Ans:The prediction for K = 1 is Green, because #5 is the nearest neighbor for K 
 
 Ans:The prediction for K = 3 is Red, because #2 (Red), #5 (Green), and #6 (Red) are the nearest neighbors for K = 3. Red is the predicted class because the majority of neighbours for K=3 are red.
 
-(d) If the Bayes decision boundary in this problem is highly nonlinear,
-then would we expect the best value for K to be large or
+(d) If the Bayes decision boundary in this problem is highly nonlinear, then would we expect the best value for K to be large or
 small? Why?
-We would expect the best value of K to be small because a smaller value of K makes the model more flexible and allows the Bayes decision boundary to change more responsively to the nearest neighbour/s.
+
+Ans: We would expect the best value of K to be small because a smaller value of K makes increases flexibility and allows the Bayes decision boundary to change more responsively to the nearest neighbour/s.
