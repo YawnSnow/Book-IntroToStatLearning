@@ -20,7 +20,7 @@ Ans: On data with high variance of error terms, a more flexible approach will be
 (a) We collect a set of data on the top 500 firms in the US. For each firm we record profit, number of employees, industry and the
 CEO salary. We are interested in understanding which factors affect CEO salary.
 
-Ans: Regression, Inference, n = 500 and p = 3
+Ans: Regression, Inference, n = 500 and p = 3.
 
 (b) We are considering launching a new product and wish to know whether it will be a success or a failure. We collect data on 20
 similar products that were previously launched. For each product we have recorded whether it was a success or failure, price
