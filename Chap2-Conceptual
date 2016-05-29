@@ -41,7 +41,7 @@ the amount of flexibility in the method, and the y-axis should represent the val
 Make sure to label each one. 
 (b) Explain why each of the five curves has the shape displayed in part (a).
 
-Ans: *The image will be inserted soon*
+Ans: **The image will be inserted soon**
 1) Squared Bias - Squared bias is the error due to the difference between the average predicted value (which can be obtained by training model over different sets of data) and the right value of what we are trying to predict. As the flexibility of the model increases, we can fit more closely to the training data and as a result, the error due to bias decreases.
 
 2) Variance - Variance is how much the predicted value differs over different iterations of model trained with unique sets of data. Error due to variance increases as the flexibility increases because the model starts fitting noise too closely and a result, performs poorly on test data.
